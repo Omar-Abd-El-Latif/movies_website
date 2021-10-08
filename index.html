@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movies</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <script src="js/jquery-3.6.0.slim.min.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<!--//navbar-->
+<div class="side-nav">
+    <ul class="">
+        <li class="fade1 animate__animated  animate__backInUp"><a href="#" onclick="nowplaying()">Now playing</a></li>
+        <li class="fade2 animate__animated  animate__backInUp"><a href="#" onclick="popular()">Popular</a></li>
+        <li class="fade3 animate__animated  animate__backInUp"><a href="#" onclick="toprated()">Top Rated</a></li>
+        <li class="fade4 animate__animated  animate__backInUp"><a href="#" onclick="trending()">Trending</a></li>
+        <li class="fade5 animate__animated  animate__backInUp"><a href="#" onclick="upcoming()">Upcoming</a></li>
+    </ul>
+
+
+    <div class="side-white" id="white-bar">
+
+        <div class="sidebarBtn">
+
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+    <div class="" style="position: absolute; bottom:0;left:0;height: 60vh;background-color: black;color: white; ">
+
+        <p class="" style=" margin-top:490px">Copyright Â© 2019 All Rights Reserved.</p>
+
+
+    </div>
+</div>
+
+
+<!--//header-->
+<header>
+    <div class="container ">
+        <div class="row height d-flex justify-content-center align-items-center mx-5 ">
+            <div class="col-md-6">
+                <input type="text" id="keyWord" class="form-control background_input"
+                       placeholder="search">
+            </div>
+            <div class="col-md-6">
+                <input type="text" id="search" class="form-control background_input"
+                       placeholder="get movies by word...">
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!--//main-->
+<div class="container">
+    <main id="main" class=" row mx-5">
+
+    </main>
+</div>
+
+
+<!--//contact us-->
+
+<form action="">
+    <div class="container ">
+
+        <div class="row height d-flex justify-content-center align-items-center mx-5">
+            <h2 class="my-5" style="color: white">Contact Us</h2>
+            <div class="col-md-6">
+                <input type="text" class="form-control background_input"
+                       placeholder="Enter Your Name ..." pattern="[A-Za-z0-9]+" required>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control background_input forma1" name="text1"
+                       placeholder="Enter Your Email ...">
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control background_input"
+                       placeholder="Enter Your phone ..." pattern="^01[0-2]\d{1,8}$" required>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control background_input"
+                       placeholder="age ..." required>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control background_input"
+                       placeholder="password..." required>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control background_input"
+                       placeholder="repassword ..." required>
+            </div>
+            <div class="col  ">
+                <button class="btn btn-danger bg-dark my-4">Submit</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</form>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script src="index.js"></script>
+</body>
+</html>
